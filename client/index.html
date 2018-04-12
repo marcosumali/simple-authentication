@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -45,7 +44,7 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="mx-auto col-sm-10 pb-3 pt-2">
-                                            <button type="submit" class="btn btn-outline-secondary btn-lg btn-block">Sign-in</button>
+                                            <button type="submit" class="btn btn-outline-secondary btn-lg btn-block" @click="findUserToDB">Sign-in</button>
                                         </div>
                                     </div>
                                 </form>
@@ -110,6 +109,21 @@
             methods: {
                 addUserToDB() {
                     
+                },
+                findUserToDB() {
+
+                    let obj = {
+                        username: 'lala',
+                        password: '00000'
+                    }
+
+                    axios.get('http://localhost:3000/users', obj)
+                    .then(function (result) {
+                        console.log('ini resultnya',result);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
                 }
             }
         })
