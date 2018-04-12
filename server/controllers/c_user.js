@@ -6,6 +6,7 @@ class ControllerUser {
     static findUser (req,res) {
         let username = req.body.username;
         let password = req.body.password;
+        console.log('ini req body',req.params);
 
         ModelUser.findOne({ 'username': username }, function(err, result) {
             if (err) {
@@ -27,6 +28,7 @@ class ControllerUser {
 
     static addUser(req,res) {
         const newUser = new ModelUser(req.body);
+        console.log(req.body);
 
         newUser.save(function(err, result) {
             if (err) {
