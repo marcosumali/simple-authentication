@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            
+        <title>AUTHENTICATION</title>
+    </head>
+
+    <body class="bg-primary">
+        <section id="app">
+            <div class="container py-5">
+                <h2 class="text-center pb-2"></h2>
+                <div class="row">
+                    <div class="col-lg-6 col-12 pb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">Login</h2>
+                                <form class="py-2" role="form">
+                                    <div class="form-group">
+                                        <label for="inputEmailForm" class="sr-only form-control-label">Email</label>
+                                        <div class="mx-auto col-sm-10">
+                                            <input type="text" class="form-control" id="inputEmailForm" placeholder="email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPasswordForm" class="sr-only form-control-label">Password</label>
+                                        <div class="mx-auto col-sm-10">
+                                            <input type="text" class="form-control" id="inputPasswordForm" placeholder="password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="mx-auto col-sm-10">
+                                            <div class="checkbox form-control form-control-sm text-center small">
+                                                <label class="">
+                                                    <input type="checkbox" class=""> remember me</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="mx-auto col-sm-10 pb-3 pt-2">
+                                            <button type="submit" class="btn btn-outline-secondary btn-lg btn-block">Sign-in</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <ul class="list-inline text-center">
+                                    <li class="list-inline-item px-3"><a href="" title="Twitter"><i class="fa fa-twitter"></i></a>&nbsp; </li>
+                                    <li class="list-inline-item px-3"><a href="" title="Google"><i class="fa fa-google"></i></a>&nbsp; </li>
+                                    <li class="list-inline-item px-3"><a href="" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 pb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">Sign-up</h2>
+                                <ul class="list-inline text-center py-2">
+                                    <li class="list-inline-item px-3"><a href="" title="Twitter"><i class="fa fa-twitter"></i></a>&nbsp; </li>
+                                    <li class="list-inline-item px-3"><a href="" title="Google"><i class="fa fa-google"></i></a>&nbsp; </li>
+                                    <li class="list-inline-item px-3"><a href="" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="input2EmailForm" class="sr-only form-control-label">email</label>
+                                        <div class="mx-auto col-sm-10">
+                                            <input type="text" class="form-control" id="input2EmailForm" placeholder="email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input2PasswordForm" class="sr-only form-control-label">password</label>
+                                        <div class="mx-auto col-sm-10">
+                                            <input type="text" class="form-control" id="input2PasswordForm" placeholder="password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input2Password2Form" class="sr-only form-control-label">verify</label>
+                                        <div class="mx-auto col-sm-10">
+                                            <input type="text" class="form-control" id="input2Password2Form" placeholder="verify password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="mx-auto col-sm-10 pb-3 pt-2">
+                                            <button type="submit" class="btn btn-outline-secondary btn-lg btn-block">Register</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        
+    </body>
+
+
+    <script>
+        
+        new Vue({
+            el: '#app',
+            data: {},
+            methods: {
+                addUserToDB() {
+                    
+                }
+            }
+        })
+    
+    </script>
+
+
+
+</html>
